@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .calc-cont {
+    width: 290px;
+    height: 400px;
+    box-shadow: 0 5px 10px 5px #ccc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.app .calc-cont .screen {
+    height: 40px;
+    box-shadow: 0 5px 5px 2px #ccc;
+    background-color: #53d9d5;
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 8px 20px;
+    font-weight: 700;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.app .calc-cont .btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.app .calc-cont .btns button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-grow: 1;
+    border: none;
+    box-shadow: 0 5px 5px 2px #ccc;
+    background-color: #a2e8f1;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.app .calc-cont .btns button:last-child {
+    border-radius: 20px;
+    background-color: #8e8e8e;
+}
+
+.app .calc-cont .btns button:nth-child(1),
+.app .calc-cont .btns button:nth-child(5),
+.app .calc-cont .btns button:nth-child(9),
+.app .calc-cont .btns button:nth-child(13){
+    background-color: #ffb38b;
+}
+
+.app .calc-cont .btns button:active {
+    transform: scale(105%);
+}

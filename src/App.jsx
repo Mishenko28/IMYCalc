@@ -13,7 +13,7 @@ function App() {
 
     const handleC = () => {
         if (screen !== '') {
-            setScreen('I MISS YOU HAZEL <3')
+            setScreen('I MISS YOU HONEY <3')
         }
     }
 
@@ -37,8 +37,8 @@ function App() {
                     <button onClick={() => handleBtns('/')}>/</button>
                     <button onClick={() => handleBtns('0')}>0</button>
                     <button onClick={() => handleBtns('.')}>.</button>
-                    <button onClick={() => handleC()}>=</button>
                     <button onClick={() => setScreen('')}>C</button>
+                    <button onClick={() => handleC()}>=</button>
                 </div>
             </div>
         </div>
